@@ -1,0 +1,14 @@
+.list-item {
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+    
+    .list-item_text{
+        width: 80%;
+    }
+
+    .list-item_button{
+        width: 20%;
+        cursor: pointer;
+    }
+}
