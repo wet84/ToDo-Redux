@@ -13,8 +13,6 @@ function Form({ formItem, onChange, onSave, isDisabled }) {
         onChange(value);
     }
 
-    console.log("Form -> isDisabled:", isDisabled);
-
     return (
         <div className='form'>
             <input
