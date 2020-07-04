@@ -5,7 +5,7 @@ import './form.scss';
 
 const ADD_TASK='Add task'
 
-function Form({ formItem, onChange, onSave, isDisabled }) {
+function Form({ formItem, onChange, onSave}) {
     function onValueChange(e) {
         const value = {
             taskTitle: e.target.value
@@ -22,7 +22,7 @@ function Form({ formItem, onChange, onSave, isDisabled }) {
                 onChange={onValueChange}
             />
             <div>
-                <button onClick={() => onSave(formItem)} className={isDisabled ? 'disabled' : null}>{ADD_TASK}</button>
+                <button onClick={() => onSave(formItem)}>{ADD_TASK}</button>
             </div>
         </div>
     );
@@ -31,7 +31,6 @@ function Form({ formItem, onChange, onSave, isDisabled }) {
 function mapStateToProps(state) {
     return {
         formItem: state.formItem,
-        isDisabled: state.isDisabled
     };
 }
 
